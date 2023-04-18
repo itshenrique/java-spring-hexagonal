@@ -1,0 +1,13 @@
+plugins {
+	id "org.springframework.boot" version "${springBootVersion}"
+}
+
+dependencies {
+   // Internal project dependencies
+    implementation project(":core")
+    implementation project(":mariadb")
+    implementation project(":rest-api")
+
+    // Spring Boot Starters
+    implementation 'org.springframework.boot:spring-boot-starter'
+}
